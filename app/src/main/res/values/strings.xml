@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">UNAM Updates</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_general_news_name">General News</string>
+    <string name="fragment_course_news_name">Course News</string>
+
+    <string name="news_title">Title</string>
+    <string name="news_date">Date</string>
+    <string name="news_owner">Owner</string>
+
+    <string name="activity_name">Settings</string>
+
+    <array name="course">
+        <item>11BSCI</item>
+        <item>16BLAW</item>
+    </array>
+
+</resources>

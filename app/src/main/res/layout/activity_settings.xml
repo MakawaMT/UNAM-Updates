@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Student Information"
+        android:id="@+id/textView"
+
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Student Number:"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:hint="Enter student number"
+        android:id="@+id/editStudentNumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Registration Year:"
+        android:paddingTop="15dp"
+        android:textStyle="bold"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="#000000"
+        android:hint="Enter registration year"
+
+        android:id="@+id/editRegistrationYear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Course Code:"
+        android:id="@+id/textView4" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/spinnerCourseCode" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeButtons">
+        <ImageButton
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBtnSave"
+            android:src="@drawable/ic_action_save"
+            />
+
+        <ImageButton
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBtnCancel"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_action_cancel"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgBtnSave"
+            android:layout_toEndOf="@+id/imgBtnSave"
+            android:layout_marginLeft="74dp"
+            android:layout_marginStart="74dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>
